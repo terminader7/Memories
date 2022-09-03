@@ -51,10 +51,7 @@ export const Form = () => {
           label="Title"
           fullWidth
           value={postData.title}
-          onChange={(e) =>
-            //Line 34 is how you set state using an object. spread operator, then set key to e.target.value
-            setPostData({ ...postData, title: e.target.value })
-          }
+          onChange={(e) => setPostData({ ...postData, title: e.target.value })}
         ></TextField>
         <TextField
           name="message"
@@ -63,7 +60,6 @@ export const Form = () => {
           fullWidth
           value={postData.message}
           onChange={(e) =>
-            //Line 34 is how you set state using an object. spread operator, then set key to e.target.value
             setPostData({ ...postData, message: e.target.value })
           }
         ></TextField>
@@ -73,10 +69,7 @@ export const Form = () => {
           label="Tags"
           fullWidth
           value={postData.tags}
-          onChange={(e) =>
-            //Line 34 is how you set state using an object. spread operator, then set key to e.target.value
-            setPostData({ ...postData, tags: e.target.value })
-          }
+          onChange={(e) => setPostData({ ...postData, tags: e.target.value })}
         ></TextField>
         <div className={classes.fileInput}>
           <FileBase
