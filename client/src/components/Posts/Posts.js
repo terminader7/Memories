@@ -15,7 +15,7 @@ export const Posts = ({ setCurrentId }) => {
   ) : (
     <Grid
       className={classes.container}
-      conatiner
+      container
       alignItems="stretch"
       spacing={3}
     >

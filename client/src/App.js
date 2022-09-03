@@ -15,7 +15,7 @@ export const App = withStyles({})(() => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getPosts());
-  }, [dispatch]);
+  }, [currentId, dispatch]);
 
   return (
     <>
@@ -35,7 +35,7 @@ export const App = withStyles({})(() => {
           <Container>
             <Grid
               container
-              justify="space-between"
+              justifyContent="space-between"
               alignItems="stretch"
               spacing={3}
             >
